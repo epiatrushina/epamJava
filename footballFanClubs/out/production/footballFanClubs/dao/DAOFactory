@@ -1,0 +1,12 @@
+package dao;
+
+import dao.impl.FanClubDAOImplJSON;
+
+public final class DAOFactory {
+
+    private static final FanClubDAO fanClubDAO = new FanClubDAOImplJSON();
+
+    public static FanClubDAO getFanClubDAO() {
+        return fanClubDAO;
+    }
+}

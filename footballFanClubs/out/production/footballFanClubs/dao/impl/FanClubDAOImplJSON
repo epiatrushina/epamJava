@@ -1,0 +1,36 @@
+package dao.impl;
+
+import java.util.List;
+
+import dao.FanClubDAO;
+import domain.FanClub;
+
+public class FanClubDAOImplJSON implements FanClubDAO {
+
+    @Override
+    public FanClub create(FanClub entity) {
+        entity.setName("Dinamo");
+        return entity;
+    }
+
+    @Override
+    public FanClub read(long id) {
+        return null;
+    }
+
+    @Override
+    public List<FanClub> readAll() {
+        return null;
+    }
+
+    @Override
+    public void update(FanClub entity) {}
+
+    @Override
+    public void delete(FanClub entity) {}
+
+    @Override
+    public FanClub findByName(String name) {
+        return null;
+    }
+}
